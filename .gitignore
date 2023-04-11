@@ -1,0 +1,14 @@
+**/.DS_Store
+**/.settings
+**/.project
+**/.classpath
+**/.prefs
+**/target
+**/bin
+!**/tomcat
+!**/orion_devtools/.settings
+!**/orion_devtools/.project
+!**/orion_devtools/.classpath
+**/intellij-onelivery
+**/*.iml
+.pmd

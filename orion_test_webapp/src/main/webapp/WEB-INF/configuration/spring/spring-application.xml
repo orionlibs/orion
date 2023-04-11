@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:facebook="http://www.springframework.org/schema/social/facebook"
+       xmlns:twitter="http://www.springframework.org/schema/social/twitter"
+       xmlns:social="http://www.springframework.org/schema/social"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://www.springframework.org/schema/social
+       http://www.springframework.org/schema/social/spring-social.xsd
+       http://www.springframework.org/schema/social/facebook
+       http://www.springframework.org/schema/social/spring-social-facebook.xsd
+       http://www.springframework.org/schema/social/twitter
+       http://www.springframework.org/schema/social/spring-social-twitter.xsd">
+       
+       
+       <!--<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        
+        
+        <property name="locations">
+            <list>
+                <value>classpath:database.prop</value>
+                <value>WEB-INF/configuration/UserAccess.prop</value>
+            </list>
+        </property>
+    </bean>
+    
+    
+    <import resource="classpath:/configuration/spring/OrionDatabase.xml"/>
+    <import resource="classpath:/configuration/spring/orion-user-access.xml"/>
+    <import resource="classpath:/configuration/spring/orion-spring-security.xml"/>
+    <import resource="user-access.xml"/>
+    <import resource="spring-security.xml"/>-->
+</beans>

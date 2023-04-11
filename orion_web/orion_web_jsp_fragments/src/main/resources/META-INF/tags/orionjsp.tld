@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd">
+    <tlib-version>1.0</tlib-version>
+    <short-name>orionjsp</short-name>
+    <uri>https://orionplatform/jspfragments</uri>
+    
+    
+    <tag-file>
+        <name>metaImports</name>
+        <path>/META-INF/tags/head/metaImports.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>clearfix</name>
+        <path>/META-INF/tags/common/clearfix.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>CSRF</name>
+        <path>/META-INF/tags/common/CSRF.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>outdatedBrowserAlert</name>
+        <path>/META-INF/tags/common/outdatedBrowserAlert.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>redAsterisk</name>
+        <path>/META-INF/tags/common/redAsterisk.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>imageLink</name>
+        <path>/META-INF/tags/common/imageLink.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>modalAlertTriggerButton</name>
+        <path>/META-INF/tags/common/modalAlertTriggerButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>breadcrumbItem</name>
+        <path>/META-INF/tags/common/breadcrumbItem.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>formInput</name>
+        <path>/META-INF/tags/common/formInput.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>blueInputFormButton</name>
+        <path>/META-INF/tags/common/blueInputFormButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>greenInputFormButton</name>
+        <path>/META-INF/tags/common/greenInputFormButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>amberInputFormButton</name>
+        <path>/META-INF/tags/common/amberInputFormButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>redInputFormButton</name>
+        <path>/META-INF/tags/common/redInputFormButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>logoButton</name>
+        <path>/META-INF/tags/common/logoButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>pageLoader</name>
+        <path>/META-INF/tags/common/pageLoader.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>verticalBar</name>
+        <path>/META-INF/tags/common/verticalBar.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>widgetHeader</name>
+        <path>/META-INF/tags/common/widgetHeader.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>clock</name>
+        <path>/META-INF/tags/navigation/clock.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>toolsButton</name>
+        <path>/META-INF/tags/navigation/toolsButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>themeButton</name>
+        <path>/META-INF/tags/navigation/themeButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>logoutButton</name>
+        <path>/META-INF/tags/navigation/logoutButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>myDetailsButton</name>
+        <path>/META-INF/tags/navigation/myDetailsButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>formButton</name>
+        <path>/META-INF/tags/form/formButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>radioButton</name>
+        <path>/META-INF/tags/button/radioButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>blueButton</name>
+        <path>/META-INF/tags/button/blueButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>yellowButton</name>
+        <path>/META-INF/tags/button/yellowButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>greenButton</name>
+        <path>/META-INF/tags/button/greenButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>redButton</name>
+        <path>/META-INF/tags/button/redButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>lightBlueButton</name>
+        <path>/META-INF/tags/button/lightBlueButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>whiteButton</name>
+        <path>/META-INF/tags/button/whiteButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>blueOrionButton</name>
+        <path>/META-INF/tags/button/blueOrionButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>goldOrionButton</name>
+        <path>/META-INF/tags/button/goldOrionButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>redOrionButton</name>
+        <path>/META-INF/tags/button/redOrionButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>greenOrionButton</name>
+        <path>/META-INF/tags/button/greenOrionButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>closeModalButton</name>
+        <path>/META-INF/tags/button/closeModalButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>copyButton</name>
+        <path>/META-INF/tags/button/copyButton.tag</path>
+    </tag-file>
+    
+    
+    <tag-file>
+        <name>timeseriesChart</name>
+        <path>/META-INF/tags/chart/timeseriesChart.tag</path>
+    </tag-file>
+</taglib>

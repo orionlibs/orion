@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd">
+    
+    
+    <!--<bean id="LoginSuccessHandler" class="com.orionplatform.test_webapp.authentication.login.LoginSuccessHandler">
+        <property name="defaultTargetUrl" value="/application/personaldetails"/>
+    </bean>
+    
+    
+    <bean id="OrionLoginAttemptService" class="com.orionplatform.user_access.authentication.security.OrionLoginAttemptService">
+        <property name="enableMonitoringOfFailedLoginAttempts" value="${user.management.login.failed.enable.monitoring}"/>
+        <property name="maximumNumberOfAllowedFailedLoginAttempts" value="${user.management.login.failed.maximum.number.of.allowed.attempts}"/>
+        <property name="maximumNumberOfMinutesToMonitorFailedLoginAttempts" value="${user.management.login.failed.maximum.number.of.minutes.to.monitor}"/>
+    </bean>
+    
+    
+    <bean id="FailedLoginHandler" class="com.orionplatform.user_access.authentication.security.OrionFailedLoginService">
+        <property name="loginAttemptService" ref="OrionLoginAttemptService"/>
+    </bean>-->
+</beans>

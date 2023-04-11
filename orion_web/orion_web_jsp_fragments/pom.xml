@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    
+    <parent>
+        <groupId>com.orion_platform</groupId>
+        <artifactId>orion_web</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    
+    
+    <groupId>com.orion_platform</groupId>
+    <artifactId>orion_web_jsp_fragments</artifactId>
+    <version>1.0.0</version>
+    <name>Orion JSP Tags</name>
+    <description>Orion JSP Tags</description>
+    
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.orion_platform</groupId>
+            <artifactId>orion_web_java_tag_library</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+</project>

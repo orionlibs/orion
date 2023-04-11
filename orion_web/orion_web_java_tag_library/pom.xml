@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    
+    <parent>
+        <groupId>com.orion_platform</groupId>
+        <artifactId>orion_web</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    
+    
+    <groupId>com.orion_platform</groupId>
+    <artifactId>orion_web_java_tag_library</artifactId>
+    <version>1.0.0</version>
+    <name>Orion Web Java Tag Library</name>
+    <description>Orion Web Java Tag Library</description>
+    
+    
+    <!--<build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>net.revelc.code.formatter</groupId>
+                    <artifactId>formatter-maven-plugin</artifactId>
+                    
+                    
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.orion_platform</groupId>
+                            <artifactId>orion_build_tools</artifactId>
+                            <version>1.0.0</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>-->
+    
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.orion_platform</groupId>
+            <artifactId>orion_web_core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+</project>

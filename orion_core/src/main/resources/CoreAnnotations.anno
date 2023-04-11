@@ -1,0 +1,2 @@
+com.orion.core.annotation.1=com.orionplatform.core.configuration.annotations.prop.Prop
+com.orion.core.annotation.service.1=com.orionplatform.core.configuration.annotations.prop.PropertyDependencyInjectorService

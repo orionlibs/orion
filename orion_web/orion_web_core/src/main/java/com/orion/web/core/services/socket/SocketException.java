@@ -1,0 +1,38 @@
+package com.orion.web.core.services.socket;
+
+import com.orion.core.abstraction.OrionUncheckedException;
+
+public class SocketException extends OrionUncheckedException
+{
+    private static final String DefaultErrorMessage = "Problem with the socket.";
+
+
+    public SocketException()
+    {
+        super(DefaultErrorMessage);
+    }
+
+
+    public SocketException(String message)
+    {
+        super(message);
+    }
+
+
+    public SocketException(String errorMessage, Object... arguments)
+    {
+        super(String.format(errorMessage, arguments));
+    }
+
+
+    public SocketException(Throwable cause, String errorMessage, Object... arguments)
+    {
+        super(String.format(errorMessage, arguments), cause);
+    }
+
+
+    public SocketException(Throwable cause)
+    {
+        super(cause, DefaultErrorMessage);
+    }
+}

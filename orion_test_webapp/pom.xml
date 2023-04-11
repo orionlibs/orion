@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+  
+  
+    <parent>
+        <groupId>com.orion_platform</groupId>
+        <artifactId>orion_platform</artifactId>
+        <version>1.0.0</version>
+    </parent>
+   
+   
+    <groupId>com.orion_platform</groupId>
+    <artifactId>orion_test_webapp</artifactId>
+    <version>1.0.0</version>
+    <packaging>war</packaging>
+    <name>Orion Test WebApp</name>
+    
+    
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+    
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                
+                <configuration>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+            
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
+                
+                
+                <configuration>
+                    <attachClasses>true</attachClasses>
+                    
+                    
+                    <webResources>
+                        <resource>
+                            <directory>src/main/webapp/WEB-INF</directory>
+                            <targetPath>WEB-INF</targetPath>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.orion_platform</groupId>
+            <artifactId>orion_web_filters</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>com.orion_platform</groupId>
+            <artifactId>orion_user_management</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+</project>

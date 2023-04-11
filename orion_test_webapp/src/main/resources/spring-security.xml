@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd">
+    
+    
+    <bean name="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+    
+    
+    <bean name="httpRequestAccessDecisionManager" class="org.springframework.security.access.vote.AffirmativeBased">
+        <constructor-arg>
+            <util:list>
+                <bean class="org.springframework.security.web.access.expression.WebExpressionVoter"/>
+                <bean class="org.springframework.security.access.vote.RoleVoter">
+                    <!--<property name="rolePrefix" value="ROLE_" />-->
+                </bean>
+            </util:list>
+        </constructor-arg>
+    </bean>
+    
+    
+    <bean id="filterSecurityInterceptor" class="org.springframework.security.web.access.intercept.FilterSecurityInterceptor">
+        <property name="authenticationManager" ref="authenticationManager"/>
+        <property name="accessDecisionManager" ref="httpRequestAccessDecisionManager"/>
+        
+        
+        <property name="securityMetadataSource">
+            <security:filter-security-metadata-source>
+                <security:intercept-url pattern="/registration/**" access="isAnonymous()"/>
+                <security:intercept-url pattern="/" access="isAnonymous()"/>
+                <security:intercept-url pattern="/**" access="isAuthenticated()"/>
+            </security:filter-security-metadata-source>
+        </property>
+    </bean>
+    
+    
+    <!--Spring Security Configuration-->
+    <!--sets page access permissions based on URLs-->
+    <!--login-processing-url="/j_spring_security_check"-->
+    <security:http use-expressions="true">
+        <security:form-login
+            login-processing-url="/processlogin"
+            login-page="/login/"
+            username-parameter="input_username"
+            password-parameter="input_password"
+            authentication-failure-url="/loginfailed/"
+            authentication-success-handler-ref="LoginSuccessHandler"
+            authentication-details-source-ref="OrionLoginParameters"/>
+        
+        
+        <security:logout logout-url="/logout/" success-handler-ref="OrionLogoutSuccessHandler" delete-cookies="OrionSessionID"/>
+        <security:remember-me />
+        <security:access-denied-handler error-page="/error/403"/>
+        
+        
+        <security:headers>
+            <security:frame-options policy="SAMEORIGIN"/>
+        </security:headers>
+
+
+        <security:session-management>
+            <security:concurrency-control max-sessions="1" error-if-maximum-exceeded="false" />
+        </security:session-management>
+        
+        
+        <security:port-mappings>
+            <security:port-mapping http="80" https="443" />
+        </security:port-mappings>
+        
+        
+        <security:headers>
+            <security:xss-protection block="false"/>
+        </security:headers>
+    </security:http>
+    
+    
+    <security:authentication-manager alias="authenticationManager">
+        <security:authentication-provider user-service-ref="OrionLoginUserDetailsService">
+            <security:password-encoder ref="bcryptEncoder"/>
+        </security:authentication-provider>
+    </security:authentication-manager>
+</beans>

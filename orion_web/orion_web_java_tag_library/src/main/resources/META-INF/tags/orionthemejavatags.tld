@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd">
+    <tlib-version>1.0</tlib-version>
+    <short-name>orionthemejavatag</short-name>
+    <uri>https://orionplatform/orionthemejavabasedtags</uri>
+    
+    
+    <tag>
+        <name>errorSection</name>
+        <tag-class>com.orion.web.java_tag_library.themes.orion.html_elements.ErrorSectionTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+    
+    
+    <tag>
+        <name>statisticsWidget</name>
+        <tag-class>com.orion.web.java_tag_library.themes.orion.html_elements.StatisticsWidgetTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+    
+    
+    <tag>
+        <name>imageLinkWidget</name>
+        <tag-class>com.orion.web.java_tag_library.themes.orion.html_elements.ImageLinkWidgetTag</tag-class>
+        
+        
+        <attribute>
+            <name>href</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>true</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>src</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>true</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>imageButtonClasses</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>anchorLinkClasses</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>height</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>width</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>text</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>mobileUser</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+    </tag>
+    
+    
+    <tag>
+        <name>widgetHeader</name>
+        <tag-class>com.orion.web.java_tag_library.themes.orion.html_elements.WidgetHeaderTag</tag-class>
+        <body-content>JSP</body-content>
+        
+        
+        <attribute>
+            <name>text</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+    </tag>
+    
+    
+    <tag>
+        <name>dropdownButton</name>
+        <tag-class>com.orion.web.java_tag_library.themes.orion.html_elements.DropdownButtonTag</tag-class>
+        <body-content>JSP</body-content>
+        
+        
+        <attribute>
+            <name>id</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>text</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+    </tag>
+    
+    
+    <tag>
+        <name>cardResultsArea</name>
+        <tag-class>com.orion.web.java_tag_library.themes.orion.html_elements.CardResultsAreaTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+    
+    
+    <tag>
+        <name>wideModal</name>
+        <tag-class>com.orion.web.java_tag_library.themes.orion.html_elements.WideModalTag</tag-class>
+        <body-content>JSP</body-content>
+        
+        
+        <attribute>
+            <name>id</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>classes</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+    </tag>
+    
+    
+    <tag>
+        <name>simpleDataTable</name>
+        <tag-class>com.orion.web.java_tag_library.themes.orion.html_elements.SimpleDataTableTag</tag-class>
+        <body-content>JSP</body-content>
+        
+        
+        <attribute>
+            <name>id</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>classes</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+    </tag>
+    
+    
+    <tag>
+        <name>dataTable</name>
+        <tag-class>com.orion.web.java_tag_library.themes.orion.html_elements.DataTableTag</tag-class>
+        <body-content>JSP</body-content>
+        
+        
+        <attribute>
+            <name>id</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+        
+        
+        <attribute>
+            <name>classes</name>
+            <type>java.lang.String</type>
+            <rtexprvalue>true</rtexprvalue>
+            <required>false</required>
+        </attribute>
+    </tag>
+</taglib>
